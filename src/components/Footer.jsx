@@ -18,10 +18,10 @@ const Footer = () => {
           <Col xs={12} md={4} className="mb-4 mb-md-0">
             <h6 className="fw-semibold">Navigasi</h6>
             <ul className="list-unstyled small">
-              <li><a href="/about" className="text-white text-decoration-none">Tentang Kami</a></li>
-              <li><a href="/services" className="text-white text-decoration-none">Layanan</a></li>
-              <li><a href="/contact" className="text-white text-decoration-none">Kontak</a></li>
-              <li><a href="/faq" className="text-white text-decoration-none">FAQ</a></li>
+              <li><a href="/" className="text-white text-decoration-none">Tentang Kami</a></li>
+              <li><a href="/kendaraan" className="text-white text-decoration-none">Layanan</a></li>
+              <li><a href="/preview" className="text-white text-decoration-none">Preview</a></li>
+              <li><a href="/login" className="text-white text-decoration-none">Login ?</a></li>
             </ul>
           </Col>
 
