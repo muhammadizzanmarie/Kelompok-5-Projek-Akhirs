@@ -1,0 +1,53 @@
+.card-box {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 280px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Tambahkan transisi untuk background */
+  }
+  
+  .card-box:hover {
+    transform: translateY(-5px);
+    background-color: #007BFF; /* Ubah background menjadi biru saat hover */
+  }
+  
+  .card-box .icon,
+  .card-box h5,
+  .card-box p {
+    transition: color 0.3s ease; /* Transisi untuk teks */
+  }
+  
+  .card-box:hover .icon,
+  .card-box:hover h5,
+  .card-box:hover p {
+    color: white; /* Ubah warna teks menjadi putih saat hover */
+  }
+  
+  .card-box .btn {
+    background-color: #007BFF; /* Tombol jadi biru */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease; /* Transisi untuk hover tombol */
+  }
+  
+  .card-box:hover .btn {
+    background-color: white; /* Ubah background tombol jadi putih saat hover */
+    color: #007BFF; /* Ubah warna teks tombol jadi biru */
+  }
+  
+  .card-highlight {
+    /* Card dengan highlight tetap biru tanpa hover */
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .card-highlight .btn {
+    background-color: white;
+    color: #007BFF;
+    border: none;
+  }
+  
+  .card-highlight .btn:hover {
+    background-color: #e6e6e6;
+  }
+  
+  

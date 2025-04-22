@@ -1,0 +1,160 @@
+/* Banner */
+.hero-banner {
+  background-image: url('/img/inovar.png'); /* ganti sesuai lokasi file banner kamu */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Kendaraan */
+.kendaraan-section {
+  background: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.kendaraan-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.kendaraan-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.kendaraan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.kendaraan-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.kendaraan-card:hover {
+  transform: translateY(-5px);
+}
+
+.kendaraan-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.kendaraan-content {
+  padding: 20px;
+}
+
+.kendaraan-content h3 {
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.jenis,
+.plat {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 6px;
+}
+
+.btn-sewa {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sewa:hover {
+  background-color: #0056b3;
+}
+
+/* === RESPONSIVE DESIGN UNTUK HP KECIL === */
+@media (max-width: 576px) {
+  .hero-banner {
+    height: 300px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .kendaraan-section {
+    padding: 40px 15px;
+  }
+
+  .kendaraan-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .kendaraan-grid {
+    grid-template-columns: 1fr; /* 1 kolom saja di HP */
+  }
+
+  .kendaraan-content h3 {
+    font-size: 1rem;
+  }
+
+  .jenis,
+  .plat {
+    font-size: 0.9rem;
+  }
+
+  .btn-sewa {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+}
+
+/* Tambahan untuk tablet kecil */
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .kendaraan-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .kendaraan-section {
+    padding: 50px 20px;
+  }
+}

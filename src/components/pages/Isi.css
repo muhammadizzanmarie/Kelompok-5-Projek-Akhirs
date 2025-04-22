@@ -1,0 +1,157 @@
+/* Container utama */
+.isi-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Subtitle dan title */
+.isi-subtitle {
+  color: #888;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.isi-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Flex container utama */
+.isi-flexbox {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Tombol kiri */
+.isi-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.isi-button {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.isi-button:hover {
+  background-color: #1e3a8a;
+}
+
+/* Konten kanan */
+.isi-content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2 1 400px;
+  max-width: 700px;
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.isi-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Teks konten */
+.isi-content {
+  text-align: left;
+  width: 100%;
+}
+
+.isi-content-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.isi-content-desc {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.isi-content-list {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.read-more-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .isi-flexbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .isi-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .isi-button {
+    flex: 1 1 45%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .isi-content-wrap {
+    padding: 1rem;
+  }
+
+  .isi-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .isi-button {
+    flex: 1 1 100%;
+  }
+
+  .isi-content-title {
+    font-size: 1.25rem;
+  }
+
+  .isi-content-desc {
+    font-size: 0.95rem;
+  }
+}

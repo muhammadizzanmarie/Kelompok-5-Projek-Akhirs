@@ -1,0 +1,146 @@
+/* --- Umum --- */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.read-more-btn {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.read-more-btn:hover {
+  background-color: #0044cc;
+  box-shadow: 0 5px 15px rgba(0, 68, 204, 0.3);
+  color: #fff;
+}
+
+.experience-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: white;
+  max-width: 80%;
+  z-index: 10;
+}
+
+.experience-box h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.experience-box p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.position-relative img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Responsive Tablet --- */
+@media (max-width: 768px) {
+  .experience-box {
+    top: 10px;
+    left: 10px;
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .experience-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .read-more-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .card-hover {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .position-relative {
+    padding: 0 15px;
+  }
+
+  .text-section,
+  .col-md-6 {
+    padding: 0 15px;
+  }
+}
+
+/* --- Responsive Mobile Kecil --- */
+@media (max-width: 480px) {
+  .experience-box {
+    top: 8px;
+    left: 8px;
+    padding: 8px 10px;
+  }
+
+  .experience-box h2 {
+    font-size: 1.1rem;
+  }
+
+  .experience-box p {
+    font-size: 0.75rem;
+  }
+
+  .read-more-btn {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .position-relative img {
+    border-radius: 6px;
+  }
+
+  .text-section {
+    padding: 0 12px;
+    font-size: 0.9rem;
+  }
+
+  .card-hover {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-fluid {
+    margin-bottom: 1rem; /* jarak antara gambar dan teks */
+  }
+
+  .col-md-6,
+  .text-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-fluid {
+    margin-bottom: 1.2rem;
+  }
+
+  .col-md-6,
+  .text-section {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
